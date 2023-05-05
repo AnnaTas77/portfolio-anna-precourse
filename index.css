@@ -1,5 +1,252 @@
-h1 {
+/* Global Styles */
+body {
+    text-align: center;
+    background-color: #05253f;
+    color: white;
+  }
+  
+  .website-title {
+    font-size: 48px;
+    font-family: cursive, Roboto, sans-serif;
+    color: #41caca;
+    margin: 50px 0 60px;
+  }
 
-    font-size:72pt;
-    color:blue;
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    text-align: center;
+    list-style: none;
+    padding:25px;
+  }
+
+  nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0 36px;
+    text-decoration: none;
+    color: #41caca;
+    border-radius:8px;
+    font-size: 32px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Change the color of links on hover */
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: white;
+    border-radius:8px;
+  }
+
+  
+  img {
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 15px 18px 36px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  .about-me {
+    font-size: 23px;
+    font-family: Roboto, sans-serif;
+    margin: 60px 50px;
+  }
+  
+  .facts-title {
+    font-family: Roboto, serif;
+    font-size: 30px;
+    color: #41caca;
+  }
+  
+  ul {
+    display: inline-block;
+    text-align: justify;
+    margin-bottom: 60px;
+  }
+  
+  li {
+    padding: 10px;
+    font-size: 19px;
+    font-family: "Raleway", sans-serif;
+  }
+
+
+/* Project Section */
+
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+  .project-title {
+    color: #41caca;
+    font-size: 30px;
+  }
+
+  .project-description{
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    margin: 60px 50px;
+
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff1f;
+    border-radius: 8px;
+    border: 1px solid #ffffff59;
+    font-family: Georgia, sans-serif;
+    /* box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #d9d9d9; */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    color: #41caca;
+  }
+  
+  .card p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card a:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+  }
+  
+
+  /* Form Style */
+  
+  .form-style {
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-row-gap: 10px;
+    margin: 0 auto 70px;
+    width: 60%;
+    padding: 20px;
+    background: #ffffff1f;
+    border-radius: 8px;
+    border: 1px solid #ffffff59;
+    font-family: Georgia, sans-serif;
+  }
+
+  .form-title {
+    color: #41caca;
+    grid-column: 1 / -1;
+  }
+
+  label {
+    align-items: center;
+    grid-column: 1;
+  }
+  
+  
+  .input-field {
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 8px;
+    width: 85%;
+    
+  }
+  
+  .input-field:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+  
+  .input-field:focus {
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+  
+  .asterix {
+    color: #41caca;
+  }
+  
+  button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 10px 20px;
+    background-color: #1ae6ac;
+    color: #05253f;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    background: #009176;
+  }
+
+   /* Social media section */
+
+  .connect {
+    color: #41caca;
+    font-size: 30px;
+   }
+  
+ .fa-square-github, .fa-linkedin, .fa-instagram {
+  font-size: 42px;
+  color:#41caca;
+  margin: 50px 25px;
+ }
+
+
+ /* Media Queries*/
+
+ @media (max-width: 768px) {
+  .card-container  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

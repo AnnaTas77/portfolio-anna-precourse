@@ -5,17 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f0d436ece8.js" crossorigin="anonymous"></script>
     <title>My Portfolio Site</title>
 </head>
 <body>
-    <h1>Anna's Portfolio Website</h1>
-    <p>Welcome to my website. Please enjoy your stay.</p>
+    <h1 class='website-title'>Anna's Portfolio Website</h1>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <img src='https://images.immediate.co.uk/production/volatile/sites/7/2018/02/Earth-from-space-1-64e9a7c.jpg' alt='Image of Earth Seen from Space'>
 
-    <h2>Past Experience</h2>
-    <ul>
-        <li>Admin</li>
-        <li>Northcoders Student</li>
-        <li></li>
-    </ul>
+      <!-- Home section -->
+    <section id="home">
+        <p class='about-me'>
+            Hi, I'm Anna. While my educational background is in environmental conservation, my interest and passion for technology have led me to pursue a new career path in this exciting field. 
+            I am particularly drawn to web development, where I can combine my creativity with my technical skills to design visually appealing and user-friendly websites. 
+        
+          <h2 class='facts-title'>Two truths and a lie about me: </h2>
+          <ul>
+            <li>I love learning facts about the Universe.</li>
+            <li>I have climbed Mount Everest.</li>
+            <li>I love hiking in nature.</li>
+          </ul>
+      </section>
+      
+      <!-- Projects section -->
+      <section id="projects">
+        <h2 class="project-title">My Projects</h2>
+        <p class="project-description">Here are some projects I've worked on:</p>
+        <div class="card-container">
+            <div class="card">
+              <img src="project1.jpg" alt="Project 1">
+              <h3>Project 1</h3>
+              <p>Description of project 1.</p>
+              <a href="#">GitHub</a>
+            </div>
+            <div class="card">
+              <img src="project2.jpg" alt="Project 2">
+              <h3>Project 2</h3>
+              <p>Description of project 2.</p>
+              <a href="#">GitHub</a>
+            </div>
+            <div class="card">
+              <img src="project3.jpg" alt="Project 3">
+              <h3>Project 3</h3>
+              <p>Description of project 3.</p>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+      </section>
+      
+      <!-- Contact section -->
+      <section id="contact">
+        <h2 class="connect">Let's connect!</h2>
+        <div class="social-media">
+            <a href="https://github.com/AnnaTas77" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          
+      </section>
+    
+  
+    
+      <form class='form-style'>
+        <h2 class='form-title'> You can also reach me by filling out the email form below</h2>
+    
+        <label for='name'>Your name:<span class="asterix">*</span></label>
+        <input type='text' id='name' name='name' class='input-field' placeholder='Enter your name here:' required>
+        <br>
+    
+        <label for='email'>Your email:<span class="asterix">*</span></label>
+        <input type='text' id='email' name='email' class='input-field' placeholder='Enter your email here:' required>
+        <br>
+
+        <label for="subject">Email subject:<span class="asterix">*</span></label>
+        <input type="text" id="subject" name="subject" class='input-field' placeholder='Email subject:' required>
+        <br>
+    
+        <label for='message'>Your message:<span class="asterix">*</span></label>
+        <textarea type='text' id='message' name='message' class='input-field' placeholder='Enter your message here:' required></textarea>
+        <br>
+
+        <!-- <input type="submit" value="Send">
+     -->
+        <button>Submit</button>
+      </form>
+    
+    </body>
+    
 </body>
 </html>
